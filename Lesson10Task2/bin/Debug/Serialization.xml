@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<UserDataClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <characteristics>
+    <string>bold</string>
+    <string>tall</string>
+  </characteristics>
+  <Name>Vasya Pupkin</Name>
+  <Age>20</Age>
+  <Login>peterson47</Login>
+  <Password>qwerty</Password>
+</UserDataClass>
