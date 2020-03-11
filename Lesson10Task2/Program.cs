@@ -55,7 +55,15 @@ namespace Lesson10Task2
                 Console.WriteLine("Класс сериализован методом XmlSerializer с аттрибутами в SerializationWithAttributes.xml");
             }
 
-            Console.ReadLine();
+            // -- ДЕСИРЕАЛИЗАЦИЯ ПЕРВОГО КЛАССА / TASK3
+
+            using (FileStream filestream = new FileStream("Serialization.xml", FileMode.Open))
+            {
+                UserClassical userInstandeDeserialized = (UserClassical)serialiserClassical.Deserialize(filestream);
+                Console.WriteLine("Результат десериализации");
+                Console.WriteLine($"Имя: {userInstandeDeserialized.Name}, Возраст {userInstandeDeserialized.Age}, Логин {userInstandeDeserialized.Login}, Пароль {userInstandeDeserialized.Password}, Характеристика {userInstandeDeserialized.characteristics[0]}, {userInstandeDeserialized.characteristics[1]}");
+            }
+                Console.ReadLine();
         }
 
 
